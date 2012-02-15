@@ -8,5 +8,5 @@ load File.join(dir, '..', 'touch', 'resources', 'themes')
 # Place compiled *.css files in the parent directory
 sass_path    = dir
 css_path     = File.join(dir, "..")
-environment  = :development
 output_style = :expanded
+environment  = :development
