@@ -6210,23 +6210,268 @@ input[type="search"]::-webkit-search-cancel-button {
   border: 0.1em solid rgba(66, 99, 138, 0.9);
 }
 
-/* line 20, styles/default-theme.scss */
+/* line 20, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner {
+  font-size: 250%;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  -webkit-transform-origin: 0.5em 0.5em;
+  /* Shared Properties for all the bars */
+}
+/* line 29, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span, .x-loading-spinner > span:before, .x-loading-spinner > span:after {
+  display: block;
+  position: absolute;
+  width: 0.1em;
+  height: 0.25em;
+  top: 0;
+  -webkit-transform-origin: 0.05em 0.5em;
+  -webkit-border-radius: 0.05em;
+  border-radius: 0.05em;
+  content: " ";
+}
+/* line 41, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-top {
+  background-color: rgba(0, 0, 0, 0.99);
+}
+/* line 42, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-top::after {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* line 43, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-left::before {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 44, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-left {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* line 45, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-left::after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 46, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-bottom::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 47, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-bottom {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 48, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-bottom::after {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+/* line 49, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-right::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 50, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-right {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* line 51, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-right::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 52, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-top::before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 56, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span {
+  left: 50%;
+  margin-left: -0.05em;
+}
+
+/* Rotate each of the 4 Spans */
+/* line 65, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-top {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+}
+
+/* line 66, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-right {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+/* line 67, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-bottom {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
+/* line 68, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span.x-loading-left {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+}
+
+/* These are the two lines that surround each of the 4 Span lines */
+/* line 72, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span::before {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+/* line 73, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner > span::after {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
+
+/* Set Animation */
+/* line 77, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+.x-loading-spinner {
+  -webkit-animation-name: x-loading-spinner-rotate;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes x-loading-spinner-rotate {
+  /* line 85, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 86, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  8.32% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 88, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  8.33% {
+    -webkit-transform: rotate(30deg);
+  }
+
+  /* line 89, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  16.65% {
+    -webkit-transform: rotate(30deg);
+  }
+
+  /* line 91, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  16.66% {
+    -webkit-transform: rotate(60deg);
+  }
+
+  /* line 92, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  24.99% {
+    -webkit-transform: rotate(60deg);
+  }
+
+  /* line 94, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  /* line 95, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  33.32% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  /* line 97, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  33.33% {
+    -webkit-transform: rotate(120deg);
+  }
+
+  /* line 98, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  41.65% {
+    -webkit-transform: rotate(120deg);
+  }
+
+  /* line 100, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  41.66% {
+    -webkit-transform: rotate(150deg);
+  }
+
+  /* line 101, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  49.99% {
+    -webkit-transform: rotate(150deg);
+  }
+
+  /* line 103, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  /* line 104, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  58.32% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  /* line 106, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  58.33% {
+    -webkit-transform: rotate(210deg);
+  }
+
+  /* line 107, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  66.65% {
+    -webkit-transform: rotate(210deg);
+  }
+
+  /* line 109, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  66.66% {
+    -webkit-transform: rotate(240deg);
+  }
+
+  /* line 110, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  74.99% {
+    -webkit-transform: rotate(240deg);
+  }
+
+  /* line 112, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  /* line 113, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  83.32% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  /* line 115, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  83.33% {
+    -webkit-transform: rotate(300deg);
+  }
+
+  /* line 116, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  91.65% {
+    -webkit-transform: rotate(300deg);
+  }
+
+  /* line 118, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  91.66% {
+    -webkit-transform: rotate(330deg);
+  }
+
+  /* line 119, touch/resources/themes/stylesheets/sencha-touch/default/widgets/_loading-spinner.scss */
+  100% {
+    -webkit-transform: rotate(330deg);
+  }
+}
+
+/* line 23, styles/default-theme.scss */
 .tweet-wrapper h2 {
   font-weight: bold;
   padding-bottom: 3px;
 }
-/* line 21, styles/default-theme.scss */
+/* line 24, styles/default-theme.scss */
 .tweet-wrapper img {
   border-radius: 5px;
   float: left;
 }
-/* line 22, styles/default-theme.scss */
+/* line 25, styles/default-theme.scss */
 .tweet-wrapper .tweet {
   font-size: 70%;
   margin-left: 60px;
   min-height: 50px;
 }
-/* line 27, styles/default-theme.scss */
+/* line 30, styles/default-theme.scss */
 .tweet-wrapper .posted {
   float: right;
 }
