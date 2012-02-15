@@ -26,3 +26,7 @@
   }
   .posted { float: right; }
 }
+
+@include pictos-iconmask('list');
+@include pictos-iconmask('time_repeat');
+@include pictos-iconmask('twitter2');
