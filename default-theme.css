@@ -6210,26 +6210,23 @@ input[type="search"]::-webkit-search-cancel-button {
   border: 0.1em solid rgba(66, 99, 138, 0.9);
 }
 
-/* line 19, styles/default-theme.scss */
+/* line 20, styles/default-theme.scss */
 .tweet-wrapper h2 {
   font-weight: bold;
   padding-bottom: 3px;
 }
-
-/* line 20, styles/default-theme.scss */
+/* line 21, styles/default-theme.scss */
 .tweet-wrapper img {
   border-radius: 5px;
   float: left;
 }
-
-/* line 21, styles/default-theme.scss */
+/* line 22, styles/default-theme.scss */
 .tweet-wrapper .tweet {
   font-size: 70%;
   margin-left: 60px;
   min-height: 50px;
 }
-
-/* line 26, styles/default-theme.scss */
+/* line 27, styles/default-theme.scss */
 .tweet-wrapper .posted {
   float: right;
 }

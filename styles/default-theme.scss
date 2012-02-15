@@ -16,11 +16,13 @@
 @include sencha-form;
 @include sencha-msgbox;
 
-.tweet-wrapper h2 { font-weight: bold; padding-bottom: 3px; }
-.tweet-wrapper img { border-radius: 5px; float: left; }
-.tweet-wrapper .tweet {
-  font-size: 70%;
-  margin-left: 60px;
-  min-height: 50px;
+.tweet-wrapper {
+  h2 { font-weight: bold; padding-bottom: 3px; }
+  img { border-radius: 5px; float: left; }
+  .tweet {
+    font-size: 70%;
+    margin-left: 60px;
+    min-height: 50px;
+  }
+  .posted { float: right; }
 }
-.tweet-wrapper .posted { float: right; }
