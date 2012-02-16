@@ -1,3 +1,5 @@
+Check out the [live demo][demo]!
+
 The tutorial includes several checkpoints:
 
 * [Blank slate][0]
@@ -30,3 +32,5 @@ By default, the git clone command will only create the master branch locally. If
 [00-01]: https://github.com/senchalearn/Touch-Theming/compare/00_blank_slate...01_default_theme
 [01-02]: https://github.com/senchalearn/Touch-Theming/compare/01_default_theme...02_enhanced_theme
 [02-03]: https://github.com/senchalearn/Touch-Theming/compare/02_enhanced_theme...03_multi_theme
+
+[demo]: http://senchalearn.github.com/Touch-Theming/
