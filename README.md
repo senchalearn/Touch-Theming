@@ -1,9 +1,9 @@
 The tutorial includes several checkpoints:
 
 * [Blank slate][0]
-* [Demo application with default theme][1]
-* [Demo application with enhanced theme][2]
-* [Demo application with multiple themes][3]
+* [Demo application with default theme][1] ([view diff][00-01])
+* [Demo application with enhanced theme][2] ([view diff][01-02])
+* [Demo application with multiple themes][3] ([view diff][02-03])
 
 ## Using this repository to follow the screencast
 
@@ -26,3 +26,7 @@ By default, the git clone command will only create the master branch locally. If
 [1]: https://github.com/senchalearn/Touch-Theming/tree/01_default_theme
 [2]: https://github.com/senchalearn/Touch-Theming/tree/02_enhanced_theme
 [3]: https://github.com/senchalearn/Touch-Theming/tree/03_multi_theme
+
+[00-01]: https://github.com/senchalearn/Touch-Theming/compare/00_blank_slate...01_default_theme
+[01-02]: https://github.com/senchalearn/Touch-Theming/compare/01_default_theme...02_enhanced_theme
+[02-03]: https://github.com/senchalearn/Touch-Theming/compare/02_enhanced_theme...03_multi_theme
