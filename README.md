@@ -7,7 +7,7 @@ The tutorial includes several checkpoints:
 * [Demo application with enhanced theme][2] ([view diff][01-02])
 * [Demo application with multiple themes][3] ([view diff][02-03])
 
-## Using this repository to follow the screencast
+## Using this repository to [follow the screencast][video]
 
 First, you'll have to clone this repository:
 
@@ -34,3 +34,4 @@ By default, the git clone command will only create the master branch locally. If
 [02-03]: https://github.com/senchalearn/Touch-Theming/compare/02_enhanced_theme...03_multi_theme
 
 [demo]: http://senchalearn.github.com/Touch-Theming/
+[video]: https://vimeo.com/album/1846874/video/36917216
