@@ -24,6 +24,15 @@ By default, the git clone command will only create the master branch locally. If
     git checkout -b 02_enhanced_theme origin/02_enhanced_theme
     git checkout -b 03_multi_theme origin/03_multi_theme
 
+## Using Sencha Cmd
+    download [Sencha Cmd][cmd]
+    Assuming that you've saved the latest SDK into your downloads folder (`~/Downloads/sencha-touch-2.1.0-commercial`), you can run the following commands in the terminal.  Also assumes you've cloned Touch-Theming into your home directory.  Adjust commands accordingly
+
+    cd ~Downloads/sencha-touch-2.1.0-commercial
+    sencha generate app theme ~/Touch-Theming/
+    cd resources
+    compass compile
+
 [0]: https://github.com/senchalearn/Touch-Theming/tree/00_blank_slate
 [1]: https://github.com/senchalearn/Touch-Theming/tree/01_default_theme
 [2]: https://github.com/senchalearn/Touch-Theming/tree/02_enhanced_theme
@@ -35,3 +44,4 @@ By default, the git clone command will only create the master branch locally. If
 
 [demo]: http://senchalearn.github.com/Touch-Theming/
 [video]: https://vimeo.com/album/1846874/video/36917216
+[cmd]: http://www.sencha.com/products/sencha-cmd
